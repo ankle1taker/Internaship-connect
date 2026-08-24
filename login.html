@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ============================================ -->
+    <!-- LOGIN PAGE - Matches site design             -->
+    <!-- ============================================ -->
+    <meta charset="utf-8">
+    <title>InternConnect - Login</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <style>
+        /* ===== Login Page Specific Styles ===== */
+        .login-wrapper {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            background: var(--light-bg, #f8f9fa);
+        }
+        .login-container {
+            width: 100%;
+            max-width: 450px;
+        }
+        .login-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 40px 35px;
+            box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+            border: 1px solid #eee;
+        }
+        .login-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .login-header h4 {
+            font-weight: 700;
+            color: #2B3940;
+        }
+        .login-header p {
+            color: #888;
+            margin: 0;
+        }
+        .login-card .form-label {
+            font-weight: 500;
+            font-size: 14px;
+            color: #555;
+        }
+        .login-card .input-group-text {
+            background: #f8f9fa;
+            border-right: none;
+            color: #888;
+        }
+        .login-card .form-control {
+            border-left: none;
+        }
+        .login-card .form-control:focus {
+            border-color: var(--primary, #008074);
+            box-shadow: 0 0 0 0.2rem rgba(0, 128, 116, 0.15);
+        }
+        .login-card .btn-primary {
+            padding: 12px;
+            font-weight: 600;
+        }
+        .login-footer {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .login-footer p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+        .login-footer a {
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .login-footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 576px) {
+            .login-card {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-xxl">
+            <a href="index.html" class="navbar-brand">
+                <h2><i class="fa fa-graduation-cap"></i>InternConnect</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="internship.html" class="nav-link">Internships</a></li>
+                    <li class="nav-item"><a href="companies.html" class="nav-link">Companies</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="post-internship.html" class="dropdown-item">Post Internship</a></li>
+                            <li><a href="dashboard.html" class="dropdown-item">Dashboard</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex ms-3">
+                    <a href="login.html" class="btn btn-outline-primary me-2 px-4">Login</a>
+                    <a href="register.html" class="btn btn-primary px-4">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+        <div class="container-xxl">
+            <h1>Login</h1>
+            <p>Welcome back! Login to your account to continue</p>
+        </div>
+    </section>
+
+    <!-- ===== LOGIN FORM ===== -->
+    <section class="login-wrapper">
+        <div class="login-container">
+            <div class="login-card">
+                <div class="login-header">
+                    <h4><i class="fas fa-sign-in-alt text-primary me-2"></i>Welcome Back!</h4>
+                    <p>Login to your account to continue</p>
+                </div>
+                
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                            <input type="password" class="form-control" placeholder="Enter your password" required>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <a href="#" class="text-primary">Forgot Password?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+                
+                <div class="login-footer">
+                    <p>Don't have an account? <a href="register.html" class="text-primary">Register here</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container-xxl">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h5>Company</h5>
+                    <a href="about.html" class="btn-link">About Us</a>
+                    <a href="contact.html" class="btn-link">Contact Us</a>
+                    <a href="#" class="btn-link">Privacy Policy</a>
+                    <a href="#" class="btn-link">Terms & Conditions</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Quick Links</h5>
+                    <a href="internship.html" class="btn-link">Internship List</a>
+                    <a href="companies.html" class="btn-link">Top Companies</a>
+                    <a href="post-internship.html" class="btn-link">Post Internship</a>
+                    <a href="dashboard.html" class="btn-link">Dashboard</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact</h5>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Rp Huye college, Huye, Rwanda</p>
+                    <p class="mb-2"><i class="fas fa-phone-alt me-2"></i>+250 785 572 984</p>
+                    <p class="mb-2"><i class="fas fa-envelope me-2"></i>info@internconnect.rw</p>
+                    <div>
+                        <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe for latest internship updates.</p>
+                    <div class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your email" id="newsletterEmail">
+                        <button class="btn btn-primary" id="newsletterBtn">SignUp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center mt-4">
+                &copy; <a href="index.html">InternConnect</a> 2026. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

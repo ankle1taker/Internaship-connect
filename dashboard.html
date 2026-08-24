@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>InternConnect - Dashboard</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <style>
+        .stat-card { 
+            background: #fff; 
+            padding: 25px; 
+            border-radius: 8px; 
+            box-shadow: 0 0 45px rgba(0,0,0,0.08); 
+            text-align: center; 
+            transition: 0.3s; 
+            border: 1px solid transparent;
+        }
+        .stat-card:hover { 
+            border-color: #008074; 
+            transform: translateY(-5px); 
+        }
+        .stat-card i { 
+            font-size: 40px; 
+            color: #008074; 
+            margin-bottom: 10px; 
+        }
+        .stat-card h2 { 
+            font-weight: 700; 
+            color: #008074; 
+            font-size: 36px; 
+        }
+        .stat-card p { color: #666; margin: 0; }
+        .status-badge { 
+            padding: 5px 12px; 
+            border-radius: 20px; 
+            font-size: 12px; 
+            font-weight: 600; 
+        }
+        .status-pending { background: #ffc107; color: #000; }
+        .status-interview { background: #17a2b8; color: #fff; }
+        .status-accepted { background: #28a745; color: #fff; }
+        .status-rejected { background: #dc3545; color: #fff; }
+        .status-active { background: #28a745; color: #fff; }
+        .status-expired { background: #6c757d; color: #fff; }
+        .table { background: #fff; border-radius: 8px; overflow: hidden; }
+        .table th { background: #f8f9fa; font-weight: 600; }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-xxl">
+            <a href="index.html" class="navbar-brand">
+                <h2><i class="fa fa-graduation-cap"></i>InternConnect</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="internship.html" class="nav-link">Internships</a></li>
+                    <li class="nav-item"><a href="companies.html" class="nav-link">Companies</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="post-internship.html" class="dropdown-item">Post Internship</a></li>
+                            <li><a href="dashboard.html" class="dropdown-item active">Dashboard</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex ms-3">
+                    <a href="login.html" class="btn btn-outline-primary me-2 px-4">Login</a>
+                    <a href="register.html" class="btn btn-primary px-4">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+        <div class="container-xxl">
+            <h1>My Dashboard</h1>
+            <p>Manage your internships and applications</p>
+        </div>
+    </section>
+
+    <!-- ===== STATISTICS ===== -->
+    <section class="py-4">
+        <div class="container-xxl">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h2>12</h2>
+                        <p>Total Internships</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card">
+                        <i class="fas fa-file-signature"></i>
+                        <h2>8</h2>
+                        <p>Applications Sent</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card">
+                        <i class="fas fa-check-circle"></i>
+                        <h2>5</h2>
+                        <p>Active Applications</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card">
+                        <i class="fas fa-star"></i>
+                        <h2>3</h2>
+                        <p>Saved Jobs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RECENT APPLICATIONS ===== -->
+    <section class="py-4 bg-light">
+        <div class="container-xxl">
+            <h4 class="mb-4">Recent Applications</h4>
+            <div class="table-responsive">
+                <table class="table table-hover shadow-sm">
+                    <thead>
+                        <tr>
+                            <th>Internship</th>
+                            <th>Company</th>
+                            <th>Applied Date</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>IT Support Intern</td>
+                            <td>RwandAir</td>
+                            <td>15 Aug 2026</td>
+                            <td><span class="status-badge status-pending">Pending</span></td>
+                            <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Software Engineering</td>
+                            <td>MTN Rwanda</td>
+                            <td>10 Aug 2026</td>
+                            <td><span class="status-badge status-interview">Interview</span></td>
+                            <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Graphic Design</td>
+                            <td>Rwanda ICT</td>
+                            <td>05 Aug 2026</td>
+                            <td><span class="status-badge status-rejected">Rejected</span></td>
+                            <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Data Science</td>
+                            <td>HeHe Ltd</td>
+                            <td>01 Aug 2026</td>
+                            <td><span class="status-badge status-accepted">Accepted</span></td>
+                            <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MY POSTED INTERNSHIPS ===== -->
+    <section class="py-4">
+        <div class="container-xxl">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4>My Posted Internships</h4>
+                <a href="post-internship.html" class="btn btn-primary">+ Post New</a>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="internship-item">
+                        <h5>Marketing Intern</h5>
+                        <div class="meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Kigali</span>
+                            <span class="ms-3"><i class="far fa-clock"></i> Part Time</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="status-badge status-active">Active</span>
+                            <div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Edit</a>
+                                <a href="#" class="btn btn-sm btn-danger delete-internship">Delete</a>
+                            </div>
+                        </div>
+                        <small class="text-muted">Posted: 20 Aug 2026</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="internship-item">
+                        <h5>Finance Intern</h5>
+                        <div class="meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Huye</span>
+                            <span class="ms-3"><i class="far fa-clock"></i> Full Time</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="status-badge status-pending">Pending</span>
+                            <div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Edit</a>
+                                <a href="#" class="btn btn-sm btn-danger delete-internship">Delete</a>
+                            </div>
+                        </div>
+                        <small class="text-muted">Posted: 15 Aug 2026</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="internship-item">
+                        <h5>Web Developer Intern</h5>
+                        <div class="meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Musanze</span>
+                            <span class="ms-3"><i class="far fa-clock"></i> Full Time</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="status-badge status-expired">Expired</span>
+                            <div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Edit</a>
+                                <a href="#" class="btn btn-sm btn-danger delete-internship">Delete</a>
+                            </div>
+                        </div>
+                        <small class="text-muted">Posted: 01 Aug 2026</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container-xxl">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h5>Company</h5>
+                    <a href="about.html" class="btn-link">About Us</a>
+                    <a href="contact.html" class="btn-link">Contact Us</a>
+                    <a href="#" class="btn-link">Privacy Policy</a>
+                    <a href="#" class="btn-link">Terms & Conditions</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Quick Links</h5>
+                    <a href="internship.html" class="btn-link">Internship List</a>
+                    <a href="companies.html" class="btn-link">Top Companies</a>
+                    <a href="post-internship.html" class="btn-link">Post Internship</a>
+                    <a href="dashboard.html" class="btn-link">Dashboard</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact</h5>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Rp Huye college, Huye, Rwanda</p>
+                    <p class="mb-2"><i class="fas fa-phone-alt me-2"></i>+250 785 572 984</p>
+                    <p class="mb-2"><i class="fas fa-envelope me-2"></i>info@internconnect.rw</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe for latest internship updates.</p>
+                    <div class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your email" id="newsletterEmail">
+                        <button class="btn btn-primary" id="newsletterBtn">SignUp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center mt-4">
+                &copy; <a href="index.html">InternConnect</a> 2026. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

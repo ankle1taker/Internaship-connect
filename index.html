@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>InternConnect - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find internships in Rwanda">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <h2><i class="fa fa-graduation-cap"></i>InternConnect</h2>
+            </a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+            <label for="nav-toggle" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </label>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="internship.html" class="nav-link">Internships</a></li>
+                    <li class="nav-item"><a href="companies.html" class="nav-link">Companies</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="post-internship.html" class="dropdown-item">Post Internship</a></li>
+                            <li><a href="dashboard.html" class="dropdown-item">Dashboard</a></li>
+                            <li><a href="companies.html" class="dropdown-item">Companies</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex ms-lg-3 mt-3 mt-lg-0 navbar-btns">
+                    <a href="login.html" class="btn btn-outline-primary me-2 px-4 w-100">Login</a>
+                    <a href="register.html" class="btn btn-primary px-4 w-100">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pure-css-carousel">
+        <div class="carousel-track">
+            <div class="carousel-slide">
+                <img src="img/carousel-1.jpg" alt="Internship">
+                <div class="carousel-overlay">
+                    <div class="container">
+                        <h1>Find The Perfect Internship</h1>
+                        <p class="fs-5">Connect with top companies across Rwanda and launch your career.</p>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
+                            <a href="internship.html" class="btn btn-primary btn-lg">Search Internships</a>
+                            <a href="post-internship.html" class="btn btn-light btn-lg">Post Internship</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="img/carousel-2.jpg" alt="Career">
+                <div class="carousel-overlay">
+                    <div class="container">
+                        <h1>Build Your Future Today</h1>
+                        <p class="fs-5">Gain real-world experience with leading companies in Rwanda.</p>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
+                            <a href="internship.html" class="btn btn-primary btn-lg">Explore Now</a>
+                            <a href="post-internship.html" class="btn btn-light btn-lg">Post Internship</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="search-section">
+        <div class="container-xxl">
+            <div class="row g-2">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Keyword (e.g. Software, Marketing)" id="searchKeyword">
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" id="searchCategory">
+                        <option selected>All Categories</option>
+                        <option>Information Technology</option>
+                        <option>Design & Creative</option>
+                        <option>Business & Finance</option>
+                        <option>Agriculture</option>
+                        <option>Health & Medical</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" id="searchLocation">
+                        <option selected>All Locations</option>
+                        <option>Kigali</option>
+                        <option>Huye</option>
+                        <option>Musanze</option>
+                        <option>Rubavu</option>
+                        <option>Rwamagana</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-dark w-100 h-100" id="searchBtn">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container-xxl">
+            <div class="section-title">
+                <h1>Explore By Category</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6">
+                    <a href="internship.html" class="cat-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <h6>Information Technology</h6>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <a href="internship.html" class="cat-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <h6>Design & Creative</h6>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <a href="internship.html" class="cat-item">
+                        <i class="fas fa-bullhorn"></i>
+                        <h6>Marketing</h6>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <a href="internship.html" class="cat-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h6>Education</h6>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container-xxl">
+            <div class="section-title">
+                <h1>Featured Internships</h1>
+            </div>
+
+            <div class="internship-item">
+                <div class="row align-items-center g-3">
+                    <div class="col-md-8 d-flex flex-column flex-sm-row align-items-sm-center text-center text-sm-start">
+                        <img src="img/RwandAir-Logo.png" alt="Company" class="company-logo mx-auto mx-sm-0 mb-3 mb-sm-0">
+                        <div class="ms-sm-3">
+                            <h5>RwandAir IT Support Intern</h5>
+                            <div class="meta d-flex flex-wrap justify-content-center justify-content-sm-start gap-3">
+                                <span><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</span>
+                                <span><i class="far fa-clock"></i> Full Time</span>
+                                <span><i class="far fa-money-bill-alt"></i> Free charge</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end">
+                        <a href="#" class="btn btn-primary apply-btn px-4">Apply Now</a>
+                        <div class="deadline mt-2"><i class="far fa-calendar-alt"></i> Deadline: 01 Sept, 2026</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="internship-item">
+                <div class="row align-items-center g-3">
+                    <div class="col-md-8 d-flex flex-column flex-sm-row align-items-sm-center text-center text-sm-start">
+                        <img src="img/images.jpg" alt="Company" class="company-logo mx-auto mx-sm-0 mb-3 mb-sm-0">
+                        <div class="ms-sm-3">
+                            <h5>MTN Rwanda Software Engineering Intern</h5>
+                            <div class="meta d-flex flex-wrap justify-content-center justify-content-sm-start gap-3">
+                                <span><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</span>
+                                <span><i class="far fa-clock"></i> Full Time</span>
+                                <span><i class="far fa-money-bill-alt"></i> 30k FRW</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end">
+                        <a href="#" class="btn btn-primary apply-btn px-4">Apply Now</a>
+                        <div class="deadline mt-2"><i class="far fa-calendar-alt"></i> Deadline: 15 Sept, 2026</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="internship-item">
+                <div class="row align-items-center g-3">
+                    <div class="col-md-8 d-flex flex-column flex-sm-row align-items-sm-center text-center text-sm-start">
+                        <img src="img/images.png" alt="Company" class="company-logo mx-auto mx-sm-0 mb-3 mb-sm-0">
+                        <div class="ms-sm-3">
+                            <h5>Rwanda ICT Chamber Graphic Design Intern</h5>
+                            <div class="meta d-flex flex-wrap justify-content-center justify-content-sm-start gap-3">
+                                <span><i class="fas fa-map-marker-alt"></i> Musanze, Rwanda</span>
+                                <span><i class="far fa-clock"></i> Part Time</span>
+                                <span><i class="far fa-money-bill-alt"></i> Free of Charge</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end">
+                        <a href="#" class="btn btn-primary apply-btn px-4">Apply Now</a>
+                        <div class="deadline mt-2"><i class="far fa-calendar-alt"></i> Deadline: 30 Sept, 2026</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="internship.html" class="btn btn-primary px-5">View All Internships</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container-xxl">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <img src="img/about 1.jpg" class="img-fluid w-100 rounded" alt="About">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/about 2.jpg" class="img-fluid w-100 rounded" alt="About">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/about 3.jpg" class="img-fluid w-100 rounded" alt="About">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/about 4.jpg" class="img-fluid w-100 rounded" alt="About">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="mb-4">Welcome to InternConnect</h1>
+                    <p>InternConnect connects students and recent graduates with internship opportunities across Rwanda. Our mission is to help you gain valuable work experience and develop skills while providing companies with access to talented interns.</p>
+                    <div class="mt-3">
+                        <p><i class="fas fa-check text-primary me-2"></i> Expert Guidance</p>
+                        <p><i class="fas fa-check text-primary me-2"></i> Wide Range of Opportunities</p>
+                        <p><i class="fas fa-check text-primary me-2"></i> Easy Application Process</p>
+                    </div>
+                    <a href="about.html" class="btn btn-primary mt-3 px-5">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container-xxl">
+            <div class="section-title">
+                <h1>What Our Interns Say</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-item">
+                        <i class="fas fa-quote-left"></i>
+                        <p>InternConnect helped me find an amazing IT internship in Kigali. The experience was life-changing!</p>
+                        <div class="d-flex align-items-center">
+                            <img src="img/african-teenage-girl-portrait-happy-smiling-face.jpg" class="user-img" alt="User">
+                            <div class="ms-3">
+                                <h6 class="mb-0">Aline Uwimana</h6>
+                                <small class="text-muted">Software Engineering Student</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-item">
+                        <i class="fas fa-quote-left"></i>
+                        <p>I got a IT internship through InternConnect. The platform is easy to use and opportunities are genuine.</p>
+                        <div class="d-flex align-items-center">
+                            <img src="img/attractive-young-male-standing-against-shelves.jpg" class="user-img" alt="User">
+                            <div class="ms-3">
+                                <h6 class="mb-0">Tressor N.</h6>
+                                <small class="text-muted">Information system Student</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-item">
+                        <i class="fas fa-quote-left"></i>
+                        <p>I found a data science internship in Huye through InternConnect. Reliable platform, highly recommend!</p>
+                        <div class="d-flex align-items-center">
+                            <img src="img/close-up-smiley-man-with-glasses.jpg" class="user-img" alt="User">
+                            <div class="ms-3">
+                                <h6 class="mb-0">Grace Nzeyimana</h6>
+                                <small class="text-muted">Data Science Student</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-xxl">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h5>Company</h5>
+                    <a href="about.html" class="btn-link">About Us</a>
+                    <a href="contact.html" class="btn-link">Contact Us</a>
+                    <a href="#" class="btn-link">Privacy Policy</a>
+                    <a href="#" class="btn-link">Terms & Conditions</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Quick Links</h5>
+                    <a href="internship.html" class="btn-link">Internship List</a>
+                    <a href="companies.html" class="btn-link">Top Companies</a>
+                    <a href="post-internship.html" class="btn-link">Post Internship</a>
+                    <a href="dashboard.html" class="btn-link">Dashboard</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact</h5>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Rp Huye college, Huye, Rwanda</p>
+                    <p class="mb-2"><i class="fas fa-phone-alt me-2"></i>+250 785 572 984</p>
+                    <p class="mb-2"><i class="fas fa-envelope me-2"></i>info@internconnect.rw</p>
+                    <div class="d-flex gap-1 mt-3">
+                        <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe for latest internship updates.</p>
+                    <div class="d-flex flex-column flex-sm-row gap-2">
+                        <input type="email" class="form-control" placeholder="Your email" id="newsletterEmail">
+                        <button class="btn btn-primary" id="newsletterBtn">SignUp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center mt-5">
+                &copy; <a href="index.html">InternConnect</a> 2026. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+</body>
+</html>

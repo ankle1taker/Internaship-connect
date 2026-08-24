@@ -1,0 +1,123 @@
+/* ============================================ */
+/* LOGIN PAGE STYLES                           */
+/* Edit: Change colors, spacing, backgrounds   */
+/* ============================================ */
+
+:root {
+    --primary: #008074;
+    --primary-dark: #00665c;
+}
+
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f2f5;
+    padding: 20px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+.login-brand {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-brand a {
+    text-decoration: none;
+}
+
+.login-brand h2 {
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--primary);
+}
+
+.login-brand h2 i {
+    margin-right: 10px;
+}
+
+.login-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px 35px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header h4 {
+    font-weight: 700;
+    color: #2B3940;
+}
+
+.login-header p {
+    color: #888;
+    margin: 0;
+}
+
+.login-card .form-label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-card .input-group-text {
+    background: #f8f9fa;
+    border-right: none;
+    color: #888;
+}
+
+.login-card .form-control {
+    border-left: none;
+}
+
+.login-card .form-control:focus {
+    border-color: var(--primary);
+    box-shadow: none;
+}
+
+.login-card .btn-primary {
+    padding: 12px;
+    font-weight: 600;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.login-footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-footer a {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+    .login-card {
+        padding: 25px 20px;
+    }
+    
+    .login-brand h2 {
+        font-size: 24px;
+    }
+}

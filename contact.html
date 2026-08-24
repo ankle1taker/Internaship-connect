@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>InternConnect - Contact</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-xxl">
+            <a href="index.html" class="navbar-brand">
+                <h2><i class="fa fa-graduation-cap"></i>InternConnect</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="internship.html" class="nav-link">Internships</a></li>
+                    <li class="nav-item"><a href="companies.html" class="nav-link">Companies</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="post-internship.html" class="dropdown-item">Post Internship</a></li>
+                            <li><a href="dashboard.html" class="dropdown-item">Dashboard</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex ms-3">
+                    <a href="login.html" class="btn btn-outline-primary me-2 px-4">Login</a>
+                    <a href="register.html" class="btn btn-primary px-4">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+        <div class="container-xxl">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team for any questions or support</p>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT FORM ===== -->
+    <section class="py-5">
+        <div class="container-xxl">
+            <div class="row g-5">
+                <!-- Contact Info -->
+                <div class="col-lg-4">
+                    <div class="p-4 shadow-sm rounded mb-4" style="background:#fff; border:1px solid #eee;">
+                        <h5><i class="fas fa-map-marker-alt text-primary me-2"></i> Address</h5>
+                        <p class="text-muted">Rp Huye college, Huye, Rwanda</p>
+                    </div>
+                    <div class="p-4 shadow-sm rounded mb-4" style="background:#fff; border:1px solid #eee;">
+                        <h5><i class="fas fa-phone-alt text-primary me-2"></i> Phone</h5>
+                        <p class="text-muted">+250 785 572 984</p>
+                    </div>
+                    <div class="p-4 shadow-sm rounded" style="background:#fff; border:1px solid #eee;">
+                        <h5><i class="fas fa-envelope text-primary me-2"></i> Email</h5>
+                        <p class="text-muted">info@internconnect.rw</p>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <div class="card shadow-sm p-4" style="border:1px solid #eee;">
+                        <h3 class="mb-4">Send Us a Message</h3>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="contactName" placeholder="Enter your name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="contactEmail" placeholder="Enter your email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="contactSubject" placeholder="Enter subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" id="contactMessage" rows="5" placeholder="Write your message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary px-5">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container-xxl">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h5>Company</h5>
+                    <a href="about.html" class="btn-link">About Us</a>
+                    <a href="contact.html" class="btn-link">Contact Us</a>
+                    <a href="#" class="btn-link">Privacy Policy</a>
+                    <a href="#" class="btn-link">Terms & Conditions</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Quick Links</h5>
+                    <a href="internship.html" class="btn-link">Internship List</a>
+                    <a href="companies.html" class="btn-link">Top Companies</a>
+                    <a href="post-internship.html" class="btn-link">Post Internship</a>
+                    <a href="dashboard.html" class="btn-link">Dashboard</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact</h5>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Rp Huye college, Huye, Rwanda</p>
+                    <p class="mb-2"><i class="fas fa-phone-alt me-2"></i>+250 785 572 984</p>
+                    <p class="mb-2"><i class="fas fa-envelope me-2"></i>info@internconnect.rw</p>
+                    <div>
+                        <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe for latest internship updates.</p>
+                    <div class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your email" id="newsletterEmail">
+                        <button class="btn btn-primary" id="newsletterBtn">SignUp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center mt-4">
+                &copy; <a href="index.html">InternConnect</a> 2026. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
